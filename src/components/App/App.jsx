@@ -1,14 +1,14 @@
 import React from 'react';
-import "./App.css"
 import HomeScreen from '../HomeScreen/HomeScreen';
+import AppCss from './App.styled';
 
 
 
 function App() {
   return (
-    <div className="app">
+    <AppCss>
       <HomeScreen />
-    </div>
+    </AppCss>
   );
 }
 
