@@ -22,6 +22,10 @@ a {
   color: black;
 }
 
+ul, ol {
+  list-style: none;
+}
+
 button {
   padding: 1rem 2rem;
 
