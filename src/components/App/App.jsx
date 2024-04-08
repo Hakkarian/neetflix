@@ -1,13 +1,17 @@
-import React from 'react';
-import HomeScreen from '../HomeScreen/HomeScreen';
-import AppCss from './App.styled';
-
-
+import React from "react";
+import HomeScreen from "screens/HomeScreen/HomeScreen";
+import AppCss from "./App.styled";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <AppCss>
-      <HomeScreen />
+      <Router>
+        <Routes>
+          <Route index element={<HomeScreen />} />
+          <Route path="/about" element={<HomeScreen />} />
+        </Routes>
+      </Router>
     </AppCss>
   );
 }
